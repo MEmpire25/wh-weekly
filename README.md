@@ -13,7 +13,6 @@ All posts must follow the following structure:
 ```markdown
 ---
 author: Your Name
-date: YEAR-MONTH-DAY HOUR:MINUTES:SECONDS UTF-OFFSET
 spoilers: [SPOILER-1, SPOILER-2]
 ---
 
@@ -21,7 +20,7 @@ Content
 
 ```
 
-An example post can be found in the `_drafts` directory.
+Content before the `<!--spoilers-->`-separator must not include spoilers. An example post can be found in the `_drafts` directory.
 
 ### Markdown
 
