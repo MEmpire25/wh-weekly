@@ -1,8 +1,8 @@
 ---
 author: martim
 title: A Week of Contenders
-spoilers: [Bucks vs Heat (March 2), Bucks at Lakers (March 6), Lakers vs Clipper (March 8)]
-game_recommendations: [Bucks vs Lakers (March 6), Lakers vs Clippers (March 8)]
+spoilers: [Bucks at Heat (March 2), Bucks at Lakers (March 6), Lakers at Clippers (March 8)]
+game_recommendations: [Bucks at Lakers (March 6), Lakers at Clippers (March 8)]
 published: true
 ---
 
