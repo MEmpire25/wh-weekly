@@ -19,8 +19,12 @@
 
     > * {
         display: flex;
-        color: $text-color;
         flex: 0 0 auto;
+    }
+    
+    
+    a {
+        color: $text-color;
     }
 
     img {
