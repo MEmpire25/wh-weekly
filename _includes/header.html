@@ -2,7 +2,16 @@
 
   <div class="wrapper">
 
-    <h1><a href="{{ site.url }}"><img src="https://wikihoops.com/icon-v2.svg" height="36" width="36" alt="Wikihoops"> <span class="title"> weekly</span></a>{% if site.slogan %}<span class="separator"> — </span><span class="slogan">{{ site.slogan }}</span>{% endif %}</h1>
+    <h2 class="site-title">
+      <a href="{{ site.url }}">
+        <img src="https://wikihoops.com/icon-v2.svg" height="36" width="36" alt="Wikihoops"> 
+        <span class="title"> weekly</span>
+      </a>
+      {% if site.slogan %}
+      <span class="separator"> — </span>
+      <span class="slogan">{{ site.slogan }}</span>
+      {% endif %}
+    </h2>
   </div>
 
 </header>
