@@ -192,6 +192,7 @@ h1, h2, h3, h4 {
         > * {
             display: flex;
             color: $text-color;
+            flex: 0 0 auto;
         }
 
         img {
@@ -216,6 +217,7 @@ h1, h2, h3, h4 {
 
         .slogan {
             opacity: .4;
+            flex: 1 1 auto;
         }
     }
 }
