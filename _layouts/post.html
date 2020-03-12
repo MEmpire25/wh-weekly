@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="post" {% if page.spoilers %}data-spoilers="{{ page.spoilers | join: ', ' }}"{% endif %} data-url="{{ page.url }}" {% if page.author %}data-author="{{ page.author }}"{% endif %} {% if page.date %}data-date="{{ page.date }}"{% endif %} itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    <p class="post-meta">{% if author %}<a href="{{ author.url }}"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author.name }}</span></span></a> • {% endif %}<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+
+    <div class="post-excerpt" itemprop="articleBody">
+      {{ page.excerpt }}
+    </div>
+
+  </header>
+
+  <aside>
+    {% if page.game_recommendations | size %}
+    <div class="game-recommendations">
+      <h5>Recommended games to watch</h5>
+      <ul class="game-list post-meta">
+        {% for game in page.game_recommendations %}
+          <li>{{ game }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.spoilers | size %}
+    <div class="spoiler-warning">
+      <h5>The following section contains spoilers about the topics listed below</h5>
+      <ul class="spoiler-list post-meta">
+        {% for spoiler in page.spoilers %}
+          <li>{{ spoiler }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <a role="button" href="#" class="show-content">Continue reading</a>
+    {% endif %}
+  </aside>
+
+  <div class="post-content">
+    {{ content | remove_first:page.excerpt }}
+  </div>
+
+</article>

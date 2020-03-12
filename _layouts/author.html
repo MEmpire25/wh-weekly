@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h2>{{ page.name }}</h2>
+
+{{ content }}
+
+{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+{% assign num_posts = filtered_posts | size %}
+
+<h3>Posts</h3>
+{% if num_posts > 0 %}
+<ul>
+  {% for post in filtered_posts %}
+  <li><a href="{{ post.url }}">{{ post.title }} — {{ post.date | date: "%b %-d, %Y" }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="post-meta">No posts yet</p>
+{% endif %}
