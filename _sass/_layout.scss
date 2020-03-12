@@ -11,16 +11,37 @@
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1em;
+    margin-bottom: 3em;
+    margin-top: 2em;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    > * {
+        display: flex;
+        color: $text-color;
+        flex: 0 0 auto;
+    }
+
+    img {
+        display: block;
+        margin-right: .3em;
+    }
+
+    span {
+      margin-top: 7px;
+    }
+
+    .separator {
+        /* display: none; */
+        opacity: .4;
+        margin-left: .3em;
+        margin-right: .3em;
+    }
+
+    .slogan {
+        opacity: .4;
+        flex: 1 1 auto;
     }
 }
 
@@ -179,43 +200,6 @@ a:focus{
 h1, h2, h3, h4 {
     font-weight: 700;
     line-height: 1.2;
-}
-
-.site-header {
-    h1 {
-        display: flex;
-        align-items: flex-start;
-        font-size: 1.1em;
-        margin-bottom: 3em;
-        margin-top: 2em;
-
-        > * {
-            display: flex;
-            color: $text-color;
-            flex: 0 0 auto;
-        }
-
-        img {
-            display: block;
-            margin-right: .3em;
-        }
-
-        span {
-          margin-top: 7px;
-        }
-
-        .separator {
-            /* display: none; */
-            opacity: .4;
-            margin-left: .3em;
-            margin-right: .3em;
-        }
-
-        .slogan {
-            opacity: .4;
-            flex: 1 1 auto;
-        }
-    }
 }
 
 a.show-content {
