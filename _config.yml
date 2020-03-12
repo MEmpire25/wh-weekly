@@ -1,20 +1,21 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Wikihoops Weekly
 slogan: on the past and coming week in the NBA
 
 baseurl: ""
 url: "https://weekly.wikihoops.com"
+timezone: America/New_York
+
 twitter_username: wikihoops
 github_username:  wikihoops
+email: "weekly@wikihoops.com"
 
-timezone: America/New_York
+description: >
+  "We recap the past week in the NBA and preview what’s next. As always without spoilers."
+disclaimer: >
+  "The National Basketball Association (\"NBA\") and the names of the NBA teams are trademarks 
+  that are property of NBA Properties, Inc. and the member teams of the NBA. 
+  These trademark holders are not affiliated with, nor do they sponsor or endorse this site."
 
 defaults:
   - scope:
