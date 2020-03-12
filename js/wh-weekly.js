@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const a = videoLinks[i];
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      if (typeof Swal === undefined) return;
+      if (typeof Swal === "undefined") return;
       Swal.fire({
         html: `<video src="${a.href}" autoplay controls></video>`,
         background: "#222324",
